@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+}
+#MainDiv{
+    margin: auto;
+    height: 400px;
+    width: 400px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.divBtn{
+    margin: auto;
+    height: 170px;
+    width: 170px;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+.red{
+background-color: #d95980;
+}
+.green{
+background-color: #3fe692;
+}
+.yellow{
+background-color:#f99b45 ;
+}
+.purple{
+background-color: #819ff9;
+}
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: green;
+}
