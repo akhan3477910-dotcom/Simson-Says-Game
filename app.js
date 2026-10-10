@@ -12,13 +12,14 @@ document.addEventListener("keypress",function(){
         levelUp();
     }
 });
+
 function flashColor(btn){
     btn.classList.add("flash");
     setTimeout(function(){
         btn.classList.remove("flash");
     },250);
 }
-//===================
+
 function Userflash(btn){
     btn.classList.add("userflash");
     setTimeout(function(){
