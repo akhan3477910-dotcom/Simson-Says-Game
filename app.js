@@ -1,39 +1,3 @@
-// let input=document.querySelector("input");
-// let btn=document.querySelector("button");
-// let ul=document.querySelector("ul");
-
-
-// btn.addEventListener("click",()=>{
-//     let li=document.createElement("li");
-//     li.innerText=input.value;
-//     ul.append(li);
-//     input.value="";
-
-//     let dbtn=document.createElement("button");
-//     dbtn.innerText="Remove";
-//     dbtn.classList.add("delete");
-//     li.append(dbtn);
-// })
-
-// let dbtn=document.querySelectorAll(".delete");
-// for(i of dbtn){
-// i.addEventListener("click",function(){
-//     let parent=this.parentElement;
-//     parent.remove();
-// });
-// }
-
-// ul.addEventListener("click",function(event){
-//    // console.dir(event.target.nodeName);
-    
-//     if(event.target.nodeName=="BUTTON"){
-//         let parent=event.target.parentElement;
-//         parent.remove();
-//         console.log("task deleted!!");    
-//     }
-// })
-
-
 let gameSeq=[];
 let userSeq=[];
 let btn_classes=["green","red","purple","yellow"];
@@ -62,11 +26,10 @@ function Userflash(btn){
     },250);
 }
 
-//=====================
 function levelUp(){
     userSeq=[];
     level++;
-    if(level>=highest_score){ //=====================================
+    if(level>=highest_score){ 
     highest_score=level;
 }
     h2.innerText=`Level ${level}`;
@@ -77,6 +40,7 @@ function levelUp(){
    console.log(gameSeq);   
    flashColor(random_btn);
 }
+
 function btnPress(){
     let btn=this;
     Userflash(btn);
@@ -86,6 +50,7 @@ function btnPress(){
     console.log(userSeq);
     CheckAns(userSeq.length-1);    
 }
+
 let all_btn=document.querySelectorAll(".divBtn");
 for(btn of all_btn){
     btn.addEventListener("click",btnPress)
